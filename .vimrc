@@ -51,5 +51,6 @@ highlight Comment term=bold cterm=bold ctermfg=4
 set number
 set cursorline
 
-au BufRead,BufNewFile *.ts set filetype=typescript
+au BufRead,BufNewFile *.ts set filetype=typescript ts=2 shiftwidth=2
+set expandtab smartindent
 
