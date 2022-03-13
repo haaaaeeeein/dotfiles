@@ -53,5 +53,12 @@ set cursorline
 
 set ts=4 shiftwidth=4
 au BufRead,BufNewFile *.ts set filetype=typescript ts=2 shiftwidth=2
-set expandtab smartindent
-
+set expandtab smartindent autoindent
+set hlsearch " Highlight Search
+set showmatch " Highlist Matches
+set autowrite
+" Start with last modified location
+au BufReadPost *
+    \ if line("'\"") > 0 && line("'\"") <= line("$") |
+    \ exe "norm g`\"" |
+    \ endif
