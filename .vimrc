@@ -62,3 +62,9 @@ au BufReadPost *
     \ if line("'\"") > 0 && line("'\"") <= line("$") |
     \ exe "norm g`\"" |
     \ endif
+
+" Undo after closing file
+set undofile
+set undodir=$HOME/.vim/undo
+set undolevels=1000
+set undoreload=10000
