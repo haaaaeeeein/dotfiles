@@ -83,3 +83,9 @@ let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 " customize keymapping
 map <F3> <plug>NERDCommenterToggle
+
+" Undo after closing file
+set undofile
+set undodir=$HOME/.vim/undo
+set undolevels=1000
+set undoreload=10000
