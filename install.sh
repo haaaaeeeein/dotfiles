@@ -15,3 +15,5 @@ vim +PluginInstall +qall
 cp $HERE/.tmux.conf ~/.tmux.conf
 tmux source-file ~/.tmux.conf
 
+# oh-my-zsh theme
+ln -s $HERE/haein.zsh-theme ~/.oh-my-zsh/themes/haein.zsh-theme
